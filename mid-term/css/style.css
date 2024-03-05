@@ -125,7 +125,7 @@ form{
     padding: 20px;
 }
 .input{
-    margin-top: 10 px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 /* div label{
@@ -144,7 +144,7 @@ form{
     height: 85px;
     border: black solid 1px;
 }
-.preferance{
+#preferance{
     font-size: 23px;
 }
 label{
@@ -154,8 +154,12 @@ label{
 button{
     outline-style: none;
     border: black solid 1.5px;
-    font-size: 10px;
+    font-size: 11px;
     background-color:#d4e9e7 ;
     height: 40px;
     width: 50px;
+}
+footer{
+    position: absolute;
+    right: 15%;
 }

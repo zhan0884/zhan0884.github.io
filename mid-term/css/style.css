@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My css style */
+
+html{
+    background-color:#aad4cf;
+}
+
+body{
+    background-color:#d4e9e7;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1025px;
+    height:3000px;
+    margin: 0 auto;
+
+}
+
+
+h1{
+    font-size: 67px;
+    color:#ffffff;
+  
+}
+.container{
+    position: absolute;
+    top: 26%;
+    right: 36.5%;
+}
+
+
+nav li{
+    display: inline-block;
+    width: 300px;
+    font-size: 20pt;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+nav li:first-child{
+    height: 20px;
+    border-right: 1px solid black;
+}
+nav li:nth-child(2){
+    height: 20px;
+    border-right: 1px solid black;
+}
+
+h2{ 
+    font-size: 26pt;
+    color: black;
+    margin: 10px;
+    padding-top: 18px;
+
+}
+#image2{
+    width: 253px;
+    height: 262px;
+    padding-right: 5px;
+    margin: 13px;
+    float: left;
+}
+p {
+    font-size: 12pt;
+    line-height: 23px;
+    margin: 18px;   
+    
+}
+
+h3{
+    font-size: 22pt;
+    color: black;
+    margin: 14px;
+}
+.list2{
+    margin: 25px;
+    line-height: 19px;
+}
+
+form{
+    border: black solid 1.3px;
+    margin: 15px;
+    padding: 20px;
+}
+.input{
+    margin-top: 10 px;
+    margin-bottom: 10px;
+}
+/* div label{
+    margin-top: 20px;
+} */
+form{
+    font-size: 18px;
+}
+.input{
+    outline-style: none;
+    border: solid 1px gainsboro;
+    padding: 6px;
+    width: 99%;
+}
+#message{
+    height: 85px;
+    border: black solid 1px;
+}
+.preferance{
+    font-size: 23px;
+}
+label{
+    line-height: 45px;
+}
+
+button{
+    outline-style: none;
+    border: black solid 1.5px;
+    font-size: 10px;
+    background-color:#d4e9e7 ;
+    height: 40px;
+    width: 50px;
+}

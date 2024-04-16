@@ -44,7 +44,15 @@ table {
 
 /* ------------My css style-------------- */
 
+
+
+
 /* ======================= mobile style ======================= */
+
+
+
+
+
 /* ......general set........ */
 body{
     font-family: "Open Sans", sans-serif;
@@ -158,6 +166,7 @@ nav a.home{
 
 }
 /* ******************************--main--************************ */
+
 /* ----------about------------ */
 .about-section{
     background-color: #ffe6ac;
@@ -220,8 +229,7 @@ section.about-section p{
 }
 
 .container-vision .btn-2{
-    margin-top:5% ;
-    width: 26%;
+    margin-top: 30px;
 }
 
 .container-vision p{
@@ -272,6 +280,81 @@ hr{
 }
 
 /* --------------------contact------------------------ */
+/* ......message......... */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.contact-section label{
+    font-family:  "Open Sans", sans-serif;
+    font-size: 12px;
+}
+.contact-section input{
+    width: 95%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contact-section .message{
+    height: 120px;
+}
+.btn-3{
+    margin-top: 38px;
+    background-color: #222222;
+    color: #c78b06;
+    border: none;
+    font-size: 16px;
+    padding: 4px;
+}
+
+/* ........table........ */
+table,th , td{
+    table-layout: fixed;
+    border: 1px solid #222222;
+}
+table{
+    width: 97%;
+}
+th{
+    height: 37px;
+    background-color: #ffe6ac;
+    vertical-align: middle;
+}
+
+td{
+    height: 35px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+
+/* ........location........ */
+.location-box{
+    margin-top: 16px;
+}
+iframe{
+    margin: 8px;
+    width: 97%;
+}
+
+
+
+/* ----------------------footer------------------------ */
+footer{
+    background-color:#222222;
+    color: #c78b06;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 9px;
+    line-height: 19px;
+}
+footer a{
+    text-decoration: underline;
+    color: #c78b06;
+}
+
+
 
 
 
@@ -283,6 +366,7 @@ hr{
 
 /* ========================== laptop style ======================= */
 @media  screen and (min-width: 760px) {
+    /* ........general set......... */
     body{
         font-family: "Open Sans", sans-serif;
         font-style: normal;
@@ -297,6 +381,9 @@ hr{
         font-size: 30px;
         font-weight: 800;
     }
+
+
+    /* *********************----header-----*********************** */
     header {
         background-color: #222222;
     }
@@ -320,11 +407,11 @@ hr{
     nav a.home{
         color: #222222;
         background-color: #c78b06;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 3%;
+        padding-right: 3%;
         padding-top: 15px;
         padding-bottom: 15px;
-        margin: 20px;
+        margin: 3%;
     }
     
     ul li {
@@ -334,31 +421,31 @@ hr{
         text-align: center;
     }
     .search-bar{
-        width: 222px;
-        height: 30px;
+        position: relative;
+        width: 126%;
+        height: 28px;
         margin-top: 15px;
     }
     .top{
         display: flex;
         flex-direction: row;
-        margin: 30px;
-        
     }
     
     .fa-solid{
         color: #c78b06;
         border: #c78b06 1px solid;
         /* for the size of the border */
-        width: 23px;
+        width: 16%;
         height: 23px;
-        margin: 5px;
+        margin: 2.3%;
         bottom: 21px;
         position: relative;
-        left: 243px;
+        left: 167%;
+        top: -17px;
         /* for the size of the icon itself */
-        font-size: 20px;
-        padding-left: 8px;  
-        padding-top: 7px;
+        font-size: 120%;
+        padding-left: 5%;  
+        padding-top: 5%;
     }
     .banner {
         width: 100%;
@@ -388,13 +475,71 @@ hr{
         left: 2rem;
     
     }
+    /* ***********************************----main----********************* */
+   /* ---------------about-------------- */
+   .about-section{
+    background-color: #ffe6ac;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    }
 
+    section.about-section img{
+    position: relative;
+    left: 30px;
+    width: 60%;
+    height: 97%;
 
+    }
 
+    section.about-section h2{
+    padding-top: 4%;
+    }
 
+    section.about-section p{
+    padding-bottom: 2%;
+    }
+    .about-section .text-box{
+        width: 40%;
+        position: absolute;
+        left: 590px;
+    }
 
+    /* --------services----------- */
+    .services-section{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
 
+    }
+    .services-section .one {
+        grid-area: 1 / 1 / 2 / 4 ;
+    }
+    .services-section .two {
+        grid-area: 1 / 4 / 2 / 7 ;
+    }
+    .services-section .three {
+        grid-area: 2 / 1 / 2 / 3 ;
+    }
 
+    .services-section .four {
+        grid-area: 2 / 3 / 2 / 5 ;
+    }
+    .services-section .five {
+        grid-area: 2 / 5 / 2 / 7 ;
+    }
+
+    /* ----------vision----------- */
+    .vision-section img{
+        object-fit: cover;
+
+    }
+    .vision-section .btn-2{
+        position: absolute;
+        top: 140px;
+        margin-bottom:40px ;
+
+    }
 
 
     /* ----------team------------ */
@@ -434,6 +579,24 @@ hr{
     hr{
         border-bottom: #c78b06 1px solid;
     }
-    
+
+    /* -----------------contact------------------ */
+
+    .contact-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .location-box{
+        grid-area: 1 / 2 / 2 / 4;
+    }
+    .timetable-box{
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    /* --------------------footer----------------- */
+    footer{
+        margin-top: 15px;
+    }
     
 }

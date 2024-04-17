@@ -61,7 +61,7 @@ body{
 }
 h1{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 400%;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -104,9 +104,10 @@ header {
 
 ul li {
     color: #c78b07;
+    list-style-type: none;
     padding: 20px;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
 }
 nav a{
     text-decoration: none;
@@ -122,19 +123,18 @@ nav a.home{
 }
 
 .search-bar {
-    width:92%;
+    width:90%;
     height: 1.5rem;
     margin-left: 2%;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
 }
 
 .fa-solid{
     color: #c78b07;
     border: #c78b07 1px solid;
+    padding: 0.9%;
     position: relative;
-    left: 90%;
-    bottom: 1.4rem;
-    padding: 0.6%;
+    bottom: -1px;
 
 }
 
@@ -151,9 +151,13 @@ nav a.home{
     display: flexbox;
     background-color: rgb(0,0,0,0.6);
     color: white;
-    height: 33rem;
+    height: 30rem;
     position: relative;
     top: 4rem;
+    padding: 9px;
+}
+.black-container p{
+    padding: 8px;
 }
 .btn-1{
     width:281px ;
@@ -163,6 +167,7 @@ nav a.home{
     position: absolute;
     bottom: 19px;
     left: 8px;
+    border: none;
 
 }
 /* ******************************--main--************************ */
@@ -378,30 +383,36 @@ footer a{
         color: white;
     }
     main h2 {
-        font-size: 30px;
-        font-weight: 800;
-    }
+        font-size: 50px;
+        font-weight: 600;
+    };
+
 
 
     /* *********************----header-----*********************** */
     header {
         background-color: #222222;
     }
-    .logo {
-        background-color: #222222;
-        color: #222222;
-        margin: 50px;
-        margin-left: 136px;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
+    header .top{
+        padding: 16px 0;
+        display:flex ;
         align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    header .logo {
+        padding: 0;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        margin-left: 30px;
     }
 
-    nav a{
-        text-decoration: none;
-        color: #c78b06;
+
+    header nav{
+        flex: 1;
     }
 
     nav a.home{
@@ -409,44 +420,31 @@ footer a{
         background-color: #c78b06;
         padding-left: 3%;
         padding-right: 3%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin: 3%;
     }
     
-    ul li {
-        display: inline;
-        color: #c78b06;
-        padding: 20px;
-        text-align: center;
-    }
-    .search-bar{
-        position: relative;
-        width: 126%;
-        height: 28px;
-        margin-top: 15px;
-    }
-    .top{
+    nav ul {
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;  
+        margin-left: 5rem;     
     }
-    
-    .fa-solid{
-        color: #c78b06;
-        border: #c78b06 1px solid;
-        /* for the size of the border */
-        width: 16%;
-        height: 23px;
-        margin: 2.3%;
-        bottom: 21px;
+
+    .search-form{
+        margin-top: 25px;
+        display: inline-block;
         position: relative;
-        left: 167%;
-        top: -17px;
-        /* for the size of the icon itself */
-        font-size: 120%;
-        padding-left: 5%;  
-        padding-top: 5%;
+        right: 18px;
+
     }
+    .fa-solid{
+        position: relative;
+        left: 174px;
+        font-size: 22px;
+        top: -33px;
+    }
+   
+    
+   
     .banner {
         width: 100%;
         height: 40rem;
@@ -460,10 +458,12 @@ footer a{
         background-color: rgb(0,0,0,0.6);
         color: white;
         height: 80%;
-        width: 90%;
+        width: 85%;
         position: relative;
         top: 4rem;
-        left: 2rem;
+        left: 4.5rem;
+      
+
     }
     .btn-1{
         width:16rem ;
@@ -480,36 +480,42 @@ footer a{
    .about-section{
     background-color: #ffe6ac;
     display: flex;
-    flex-direction: row;
-    padding: 15px;
+    flex-wrap:nowrap;
+    flex: auto;
+
     }
+
+    .about-section .text-box{
+        margin-left: 90px;
+        margin-bottom: 24px;
+    }
+    
+
 
     section.about-section img{
-    position: relative;
-    left: 30px;
-    width: 60%;
-    height: 97%;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
 
     }
 
-    section.about-section h2{
-    padding-top: 4%;
-    }
 
-    section.about-section p{
-    padding-bottom: 2%;
-    }
-    .about-section .text-box{
-        width: 40%;
-        position: absolute;
-        left: 590px;
-    }
+
+   
 
     /* --------services----------- */
+    .services-section div{
+        max-width: 1200px;
+    }
+    .service-title{
+        margin-left: 70px;
+    }
     .services-section{
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(2,1fr);
+        margin-left: 70px;
+        margin-right: 70px;
 
     }
     .services-section .one {
@@ -534,21 +540,35 @@ footer a{
         object-fit: cover;
 
     }
+    .container-vision h2{
+        margin-left: 70px;
+    }
+    .container-vision p{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
     .vision-section .btn-2{
         position: absolute;
         top: 140px;
         margin-bottom:40px ;
+        margin-left: 70px;
 
     }
 
 
-    /* ----------team------------ */
+    /* ----------team------------ */  
     .team-section{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-auto-rows: 100px;
         background-color: #ffe6ac;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    } 
+    .team-title{
+        margin-left: 70px;
     }
     .image-box1{
         grid-column-start: 1;
@@ -573,26 +593,58 @@ footer a{
     
     .image-box2{
         grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 2;
+        grid-row-end: 3;
     }
     
     hr{
         border-bottom: #c78b06 1px solid;
     }
+   
+
+
 
     /* -----------------contact------------------ */
 
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        margin-left: 60px;
+        margin-right: 60px;
 
     }
+    .contact-title{
+        margin-left: 70px;
+    }
+    .contact-section h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    form div{
+        padding: 3px;
+
+    }
+
     .location-box{
         grid-area: 1 / 2 / 2 / 4;
     }
     .timetable-box{
         grid-area: 2 / 1 / 3 / 3;
+        margin-top: 60px;
+        font-size: 14px;
     }
+    .btn-3{
+        margin-left:6px ;
+        padding: 8px;
+        font-size: 17px;
+    }
+    iframe{
+        height: 100%;
+    
+    }
+
+
 
     /* --------------------footer----------------- */
     footer{

@@ -23,23 +23,20 @@
         <div class="logo">
             <img src="images/logo.png" alt="Three Stars Logo">
         </div>
-        <nav>
+        <nav class="navigation">
             <ul class="nav-list">
                 <li class="home"> <a href="#" class="home">Home</a></li>
-                <li> <a href="#about-section">About US</a></li>
+                <li> <a href="#about-section">About Us</a></li>
                 <li> <a href="#services-section">Services</a></li>
                 <li> <a href="#team-section">Team</a></li>
                 <li> <a href="#contact-section">Contact</a></li>
             </ul>
-            <div class="mobile-search">
-                <div class="search-bar">
-                    <input type="text" id="search-bar" name="search-bar" class="search-bar" placeholder="Search">
-                </div>
-                <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
         </nav>
+        <form class="search-form">
+                    <input type="text" id="search-bar" name="search-bar" class="search-bar" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        
         </section>
 
         <div class="banner" id="banner">
@@ -61,13 +58,13 @@
             </div>
             <div class="text-box">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
             </div>
      
         </section>
 
-        <h2>Our Services</h2>
+        <h2 class="service-title">Our Services</h2>
         <section class="services-section" id="services-section">
             <div class="box one">
                 <img src="images/digital.jpg" alt="digital">
@@ -111,7 +108,7 @@
         </section>
         
 
-        <h2>Our Team</h2>
+        <h2 class="team-title">Our Team</h2>
 
         <section class="team-section" id="team-section">
 
@@ -147,12 +144,14 @@
 
 
 
-        <h2>Contact Us</h2>
-        <h3>Send us a message</h3>
+        <h2 class="contact-title">Contact Us</h2>
+        
         <section class="contact-section" id="contact-section">
+            
 
             
             <div class="message-box">
+                <h3>Send us a message</h3>
                 <form>
                 <div class="name">
                 <label for="name">Full Name</label><br>
